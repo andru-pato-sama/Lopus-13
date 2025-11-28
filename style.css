@@ -1,0 +1,82 @@
+
+/* Estilos personalizados para aproximar el diseño de la imagen */
+body {
+    background-color: #f8f9fa;
+    /* Color de fondo claro */
+}
+
+.navbar-custom {
+    background-color: #6c757d;
+    /* Gris oscuro para el navbar */
+}
+
+.nav-link,
+.navbar-brand,
+.form-control {
+    color: #ffffff !important;
+    /* Texto blanco para la barra de navegación */
+}
+
+.search-container input {
+    background-color: #495057;
+    /* Fondo más oscuro para el campo de búsqueda */
+    border: none;
+    color: white;
+}
+
+.opciones-menu {
+    /* Estilo para el menú desplegable */
+    background-color: #6c757d;
+    padding: 1rem 0;
+    list-style: none;
+}
+
+.opciones-menu a {
+    color: white;
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+}
+
+/* Estilo para el carrusel/texto resaltado */
+.carousel-container {
+    padding: 2rem 0;
+    border: 1px solid red;
+    /* Rectángulo rojo de la imagen */
+    margin-bottom: 2rem;
+}
+
+.carousel-item-text {
+    color: black;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+/* En la vista MD, la navegación está dividida en dos columnas */
+/* Usamos flexbox para centrar y alinear */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .navbar-expand-md .navbar-collapse {
+        justify-content: flex-end;
+        /* Alinea los elementos a la derecha si es necesario */
+    }
+}
+
+/* Estilo para las opciones del menú en la vista MD */
+.opciones-list-md {
+    border: 1px solid #dee2e6;
+    /* Borde de las opciones laterales */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.opciones-list-md a {
+    color: black;
+    text-decoration: underline;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.opciones-list-md div:not(:last-child) {
+    border-bottom: 1px solid #dee2e6;
+}
